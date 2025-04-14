@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>台灣大老二</title>
+</head>
+<body>
+  <h1>台灣大老二 線上對戰</h1>
+  <input id="roomId" placeholder="輸入房號">
+  <button onclick="joinRoom()">加入房間</button>
+  <div id="playerList"></div>
+
+  <hr>
+  <h2>你的手牌</h2>
+  <div id="hand" style="margin-bottom: 10px;"></div>
+  <button onclick="playCards()">出牌</button>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
